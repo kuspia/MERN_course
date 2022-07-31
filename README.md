@@ -8,7 +8,7 @@ https://www.youtube.com/watch?v=BSO9C8Z-YV8&list=PLt5mNkGuWcuVbcPh9chXPtIjKwiETt
 
 cool so let's start
 
-### https://www.youtube.com/watch?v=BSO9C8Z-YV8&ab_channel=6PackProgrammer All about NODEJS
+### All about NODEJS
 
 First google nodejs and install it in your pc. 
 
@@ -125,18 +125,73 @@ this will use nodemon for any project gloablly and nodemon is lilbit more intres
 ![image](https://user-images.githubusercontent.com/63403330/182024670-338d65bb-5740-4cb5-9a1c-fc2d1f0e275d.png)
 
 
+#### Let's see how we can create server and what is request or response and these stuffs in details 
+
+So basically we will explore ```http``` module of nodejs to illustate the things 
+
+> server sends the response while browser actually request it pls rememeber this concept so when u type google.com u actually request it from ur browser and what you see in browser is response from the server 
+> same concept apply on localhost so here u try to request something like localhost:3000/about so u re requesting about from the browser and what u will see after that will be actually response send from the server (nodejs) {http or express} !!
+
+Now ```http.createServer()```  have the follwing def^n
+
+![image](https://user-images.githubusercontent.com/63403330/182038130-f264a211-d8d4-4356-9b70-03d64546631c.png)
+
+notice ```?``` says you may specify it else it will be taken as undefined 
+
+now we define a callback function which is called when server is created (you know that's wht callback is meant for, when task is done it should be called) inside it as shown below to have access to request done by browser (_to know the url or maybe method(like it is get or post) etc_) and hence respond to it via server using reponse variable of callback function. 
+
+```
+const http = require('http')
+const s = http.createServer( (req , rep)=>{
+    rep.end("HI")
+    //rep.end("Dgdsgsd") make sure u comment it as u can't do it more than once ok in case u have multiple rep.end() so u can use return or make sure only one is executed 
+} )
+s.listen(3000  , ()=> {} )
+
+const ss = http.createServer()
+console.log(ss)
+```
+> Note s.listen() have many arguments that you can see and tbh all of them are optional also and ss is just a http server created as shown right?
+> you can also send rep.end(home) where home is whole html code that is read from some home.html file as shown 
+
+![image](https://user-images.githubusercontent.com/63403330/182039542-26157e76-a4c5-48b3-a83e-2c9647735129.png)
+
+Now let me tell u more about package.json file 
+
+```
+{
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1", 
+        "start": "node i.js" 
+        
+  },
+}
+
+// you may specify more like start as per ur need if required
+```
+
+now if u do ```npm start``` it will execute start script command written inside package.json file and _pls note it is mandatory when deploying on heroku_  
+
+> The main field is a module (u knw in nodejs everything ur .js file or object or var everything is referred as module which may be simple or complex) ID that is the primary entry point to your program. That is, if your package is named foo, and a user installs it, and then does require("foo"), then your main module's exports object will be returned.
+
+
+### To deploy the above on heroku 
+
+install CLI and follow heroku instructions
+
+make a ```Procfile``` with the follwing content:
+
+
+```
+web: node i.js
+```
 
 
 
+remember to set port as ```process.env.PORT``` and hostname as nothing (since it is optional u knw that in http or express both) or website URL 
 
-
-
-
-
-
-
-
-
+u may set PORT value here as u want 
+![image](https://user-images.githubusercontent.com/63403330/182039804-79667ed5-f7b5-4cde-86f6-53e0860de8dc.png)
 
 
 
