@@ -24,11 +24,11 @@ we will look into get and post carefully and rest u can learn by the time
 
 #### app.get() and app.post() ?
 
-so what happens when a browser request a server on particular URL or route or api say ```localhost:3000/about``` so what happens it actually wants or try to get a response from the server
-as soon as user hits the  URL or route or api so we say that a browser is trying to get something from the server which is taken care by ```app.get()```
+so what happens when a browser request a server on particular URL or route say ```localhost:3000/about``` so what happens it actually wants or try to get a response from the server
+as soon as user hits the  URL or route so we say that a browser is trying to get something from the server which is taken care by ```app.get()```
 
-however sometimes let's say during filling of the form from some URL or route or api it try to post the content of form from the browser so in this case we say that ```app.post()``` will actually 
-take care of that content sent from the browser to the server on same URL or route or api.
+however sometimes let's say during filling of the form from some URL or route it try to post the content of form from the browser so in this case we say that ```app.post()``` will actually 
+take care of that content sent from the browser to the server on same URL or route.
 
 so now before diving in let's make it clear about form 
 
@@ -98,4 +98,6 @@ use above lines for req.body
 
 > GET carries request parameter appended in URL string while POST carries request parameter in message body which makes it more secure way of transferring data from client
    
+##### but do u know what exactly api is ?? it's ok a kind of route or url but in api we send 
+
 
