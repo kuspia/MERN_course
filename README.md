@@ -6,7 +6,9 @@ ok I will be referring to
 
 https://www.youtube.com/watch?v=BSO9C8Z-YV8&list=PLt5mNkGuWcuVbcPh9chXPtIjKwiETteea&ab_channel=6PackProgrammer this ututbe channel to make this ok??
 
-cool so let's start
+maybe some other videos too if needed I will put URL if needed badly if i feel.
+
+cool so let's start see just naviagte to the .md extension files for learning it in root repo.
 
 ### All about NODEJS
 
