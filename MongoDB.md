@@ -73,9 +73,55 @@ const mod = new mongoose.model('boy', forma);
         id : 23 
     })
     mod1.save()
+    console.log("1")
 ```
 
 u will see a new collection named ```boys``` is created instead of ```boy```
+
+now u see that ```mod1.save()``` returns a promise therfore ```console.log("1")``` is printed first and then it is executed but what if we want to forcefully execute printing of "1" ??
+
+```
+const adder = ()=>{
+    const mod1 = new mod ({
+        id : 23 
+    })
+    mod1.save()
+}
+adder();
+console.log("1")
+```
+
+but listen this is sync function btw fyi, now see the o/p very carefully and observe it.
+
+![image](https://user-images.githubusercontent.com/63403330/182104861-93b53587-f0e9-4816-8a62-25f5f486fd70.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 So Atlas let you create a cluster and then using browse collection you can navigate to your Database and hence see the collections and finally you can see your records .
 
