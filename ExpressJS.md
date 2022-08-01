@@ -278,6 +278,12 @@ i.html
 ```
 
 
+Note 
+
+```router.route("/v2").get().post()``` 
+
+i.e for same api or route or path or URL u can define get post put delete and so on  make sure to pass callback functions in it !!
+
 
 
 
