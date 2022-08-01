@@ -52,7 +52,30 @@ mongoose.connect('mongodb://localhost:27017/sample', {useNewUrlParser: true , us
 
 You can always use  ```.then()``` to pass callback inside it and do some print to knw when it is done exactly 
 
+Let's see how we can setup a new database named as ```sample``` and a new collection named as ```boy```
 
+```
+const mongoose = require("mongoose");
+mongoose.connect('mongodb://localhost:27017/sample', {useNewUrlParser: true , useUnifiedTopology: true})
+.then(()=>{
+    console.log("DB Integrated");
+})
+.catch((error) => {
+            console.log(error);
+})
+const forma = new mongoose.Schema({ 
+id: Number
+},
+{ timestamps: true } // optional 
+);
+const mod = new mongoose.model('boy', forma); 
+    const mod1 = new mod ({
+        id : 23 
+    })
+    mod1.save()
+```
+
+u will see a new collection named ```boys``` is created instead of ```boy```
 
 So Atlas let you create a cluster and then using browse collection you can navigate to your Database and hence see the collections and finally you can see your records .
 
