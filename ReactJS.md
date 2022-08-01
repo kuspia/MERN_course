@@ -129,7 +129,43 @@ Now we want to create PreNavbar
 
   as we redirect to the route then only below components listed to route will be opened up.
   
+ 
+  to create slider or such stuff we install this ok ?
   
+  
+  ![image](https://user-images.githubusercontent.com/63403330/182165275-debbe490-c3f4-4e9a-8019-ad20720f5317.png)
+
+ ![image](https://user-images.githubusercontent.com/63403330/182166962-b864c409-5aaf-4b16-add7-1ed7d16c15b8.png)
+
+  
+  look at slider code 
+  
+ ```
+  import React from 'react'
+import Carousel from 'react-bootstrap/Carousel'
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+const Slider = ({start}) => {
+    return (
+        <Carousel fade>
+       {start.map((item)=>(
+            <Carousel.Item>
+            <img
+              className="d-block w-100"
+              src={item}
+              alt="First slide"
+            />
+          </Carousel.Item>
+       ))}
+      </Carousel>
+    )
+}
+
+export default Slider
+ ```
+  
+  ![image](https://user-images.githubusercontent.com/63403330/182168034-56045030-2c13-4433-aaf9-e03c1668ed19.png)
+
   
   
   
