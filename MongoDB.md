@@ -112,7 +112,9 @@ The await expression causes async function execution to pause until a Promise is
 
 clearly in sync function if ```re``` which is the fulfilled value was used below so it may cause some issue right? so to handle we have concept of await.
 
+![image](https://user-images.githubusercontent.com/63403330/182106459-026293ed-d360-419b-83a4-00cd394befd6.png)
 
+now re is not a promise anymore and u alos can't use .then() with it as it is not a promise anymore .... promise is fulfilled now or it is being rejected that's sit !!
 
 
 
