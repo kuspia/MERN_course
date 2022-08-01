@@ -29,3 +29,41 @@ now see we created App and inside it we made a div that we can render as many ti
 
 so that means basically this will be rendered in the root div of ```index.html``` which is our main website stuff.
 
+![image](https://user-images.githubusercontent.com/63403330/182140790-324bf685-e0e5-45db-92f0-98c6dd5a9450.png)
+
+now in terimal start the server as ```npm start``` and you will see like that 
+
+![image](https://user-images.githubusercontent.com/63403330/182141294-577339fd-257a-4b4e-b64c-702b9f0097cd.png)
+
+![image](https://user-images.githubusercontent.com/63403330/182141319-66f84e2b-0aa4-4025-a0c4-3756bca5ff56.png)
+
+u see we get a deployed URL on some IP to test it on other device too at the same time.
+
+```
+function App() {
+  return (
+    <div>
+     HEELELO
+    </div>
+  );
+}
+```
+
+see above is ```JSS``` which is JS + HTML 
+
+see inside <div> u cn write HTML and outisde that you can write JS, u can also use {} inside div to write JS inside it
+  
+  ![image](https://user-images.githubusercontent.com/63403330/182142247-05d0fc58-c4d9-4db4-9be5-0a6e431eb628.png) Install it 
+
+
+
+
+  
+
+
+
+
+
+
+
+
