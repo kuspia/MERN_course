@@ -136,6 +136,18 @@ to find heights where it is equal to 6
 
 So Atlas let you create a cluster and then using browse collection you can navigate to your Database and hence see the collections and finally you can see your records.
 
+first create ```.env```
 
+```
+DB_USERNAME = kus
+DB_PASSWORD = gwr5t4w5tq45t53tt3tsrgw3
+DB_NAME = amburgnae
+```
+
+and now conenct as shown 
+
+```
+mongoose.connect(`mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@cluster0.a7rq8.mongodb.net/${process.env.DB_NAME}?retryWrites=true&w=majority`)
+```
 
 
