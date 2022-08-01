@@ -67,12 +67,42 @@ choose this for your comfort of wrting tags like type h1 or div.class#id and hit
 
 ![image](https://user-images.githubusercontent.com/63403330/182144709-f777f4c1-f6ee-4324-b76d-b4db9432bb95.png)
 
+
+Do, 
+
+![image](https://user-images.githubusercontent.com/63403330/182145708-24da93af-9e94-45bb-bbb7-07f6edd6d6b0.png)
+
+
+nd hit enter to see the magic 
+
+so we created a new component named Navbar 
+
+```
+import React from 'react'
+const Navbar = () => {
+return (
+<div>Navbar</div>
+)
+}
+
+export default Navbar
+```
+
+now this we want to use in our ```App.js``` file
+
+so use the component as shown 
+
+![image](https://user-images.githubusercontent.com/63403330/182146680-7606d6eb-ecc3-4dc0-bcda-87cb021dc28a.png)
+
+one more way 
   
+![image](https://user-images.githubusercontent.com/63403330/182147053-3d759b6f-626d-4a93-984e-7359b702a0d3.png)
+
+![image](https://user-images.githubusercontent.com/63403330/182147110-3b5b410c-0c81-46ae-b002-2e34ec41514b.png)
+
   
 
 
-
-  
 
 
 
