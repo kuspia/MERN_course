@@ -116,6 +116,10 @@ clearly in sync function if ```re``` which is the fulfilled value was used below
 
 now ```re``` is not a promise anymore and u alos can't use .then() with it as it is not a promise anymore .... promise is fulfilled now and hence u can safely proceed in async function to execute further commands!!
 
+> remember async is like it can wait but sync will go sequence by sequence instructions forcefully 
+
+![image](https://user-images.githubusercontent.com/63403330/182111322-6d4d768a-1d48-4090-8fa9-7cb16d67c3b6.png)
+
 
 So Atlas let you create a cluster and then using browse collection you can navigate to your Database and hence see the collections and finally you can see your records .
 
