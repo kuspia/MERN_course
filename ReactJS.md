@@ -124,4 +124,17 @@ Now we want to create PreNavbar
   
   now see there is one way ```import "../styles/PreNavbar.css"``` it is written in PreNavabar component obviously, but let's say css file is not created so select the path and press ```ctrl + click``` in visual studio to open or create it.
   
+  use of <link> tag 
+  
+  ![image](https://user-images.githubusercontent.com/63403330/182160028-8135067b-5a6f-4de3-8b29-98f3a5edc6f6.png)
+
+  we use it because in <a> tht url is open up by reloading but using link we can route it without any loading ok moreoever we can see that 
+  
+  ![image](https://user-images.githubusercontent.com/63403330/182160444-3493c487-5802-4582-b39c-415358f8b801.png)
+
+  as we redirect to the route then only below components listed to route will be opened up.
+  
+  
+  
+  
   
