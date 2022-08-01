@@ -89,8 +89,8 @@ u can try printing ```req.body``` and see in both methods
 
 
 ```
-const bodyp = require("body-parser")
-app.use(bodyp.urlencoded({extended:false}))
+const body-parser = require("body-parser")
+app.use(body-parser.urlencoded({extended:false}))
 ```
 
 use above lines for req.body 
@@ -98,6 +98,72 @@ use above lines for req.body
 
 > GET carries request parameter appended in URL string while POST carries request parameter in message body which makes it more secure way of transferring data from client
    
-##### but do u know what exactly api is ?? it's ok a kind of route or url but in api we send 
+##### but do u know what exactly api is ?? it's ok a kind of route or url but in api we send raw josn on response 
+
+let's see that:
+
+```
+app.get("/v2" , (req , res)=>{
+   res.json(
+      {
+     name: "get" 
+      }
+   )
+})
+app.post("/v1" , (req , res)=>{
+const u = req.body.name 
+console.log(u)
+res.json(
+   {
+  success: true
+  name: u
+   }
+)
+})
+```
+
+![image](https://user-images.githubusercontent.com/63403330/182074937-0d121b3a-5f79-483b-a847-4e388885797f.png)
+
+![image](https://user-images.githubusercontent.com/63403330/182075128-c5b0cb97-30a6-4975-9600-90fd729c15d2.png)
+
+
+but listen in thunderstorm you also have to write this ```app.use(express.json())``` else you will see empty body however for browser it is not manadatory
+
+![image](https://user-images.githubusercontent.com/63403330/182074994-1f1630eb-a3f0-40a7-a552-743899cf9124.png)
+
+this is browser case and look at it basically we are doing post request via form submit button.
+
+![image](https://user-images.githubusercontent.com/63403330/182075162-b521f802-7ef8-4720-b7d2-08830b214c53.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
