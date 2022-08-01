@@ -95,9 +95,22 @@ but listen this is sync function btw fyi, now see the o/p very carefully and obs
 
 ![image](https://user-images.githubusercontent.com/63403330/182104861-93b53587-f0e9-4816-8a62-25f5f486fd70.png)
 
+```
+const adder = async()=>{
+    const mod1 = new mod ({
+        id : 23 
+    })
+  const re =  await mod1.save() // pausedddd !! here the function adder bro 
+  console.log(re)
+}
+```
+
+#### Very important concept in JS async and await 
+
+The await expression causes async function execution to pause until a Promise is settled (that is, _fulfilled or rejected_), and to resume execution of the async function after fulfillment. When resumed, the value of the await expression is that of the fulfilled Promise.
 
 
-
+clearly in sync function if ```re``` which is the fulfilled value was used below so it may cause some issue right? so to handle we have concept of await.
 
 
 
