@@ -284,28 +284,11 @@ Note
 
 i.e for same api or route or path or URL u can define get post put delete and so on  make sure to pass callback functions in it !!
 
+see this trick also to shorten the api path as shown in 1st image 
 
+![image](https://user-images.githubusercontent.com/63403330/182079955-048029a6-3213-4c3d-ac31-1d5246a30d06.png)
 
+Solution:
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+![image](https://user-images.githubusercontent.com/63403330/182079892-4bdb6ec4-f43a-44ce-ad4f-e844139f908b.png)
 
