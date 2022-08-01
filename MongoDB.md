@@ -38,6 +38,19 @@ Record structure of mongo (it is similar to json k/as bson (bianry json))
 
 ![image](https://user-images.githubusercontent.com/63403330/182087245-7bc3c646-f269-40b0-9283-129fe96fb159.png)
 
+What is promising function ??
+
+it is very important as js in single thread so what happens some functions are promising in nature they say i may take a lot or few seconds meanwhile rest code can execute and I will solve my problem or query and reflect it later
+
+ex: 
+```
+mongoose.connect('mongodb://localhost:27017/sample', {useNewUrlParser: true , useUnifiedTopology: true})
+.then(()=>{
+    console.log("DB Integrated");
+})
+```
+
+You can always use  ```.then()``` to pass callback inside it and do some print to knw when it is done exactly 
 
 
 
