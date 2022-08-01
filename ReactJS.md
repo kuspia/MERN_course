@@ -105,9 +105,23 @@ one more way
 
 _______________________________________________________________________________
 
+  
+let's clone MI store 
 
+create data.json (https://github.com/meabhisingh/MiStore/blob/master/src/data/data.json) in data folder inside src and also make component name folder inside the same ok?
 
+Now we want to create PreNavbar 
+  
+  ![image](https://user-images.githubusercontent.com/63403330/182151159-98a52c18-f646-439a-b129-611973bbca96.png)
 
+  
+  u see there are 2 navbars I am talking of above one 
+  
+  change ur directories as shown 
+  
+  ![image](https://user-images.githubusercontent.com/63403330/182151302-43bf0136-9d63-46ab-bfdc-0a0ff3317fcb.png)
 
-
-
+  
+  now see there is one way ```import "../styles/PreNavbar.css"``` it is written in PreNavabar component obviously, but let's say css file is not created so select the path and press ```ctrl + click``` in visual studio to open or create it.
+  
+  
