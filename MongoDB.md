@@ -120,7 +120,22 @@ now ```re``` is not a promise anymore and u alos can't use .then() with it as it
 
 ![image](https://user-images.githubusercontent.com/63403330/182111322-6d4d768a-1d48-4090-8fa9-7cb16d67c3b6.png)
 
+One more way 
 
-So Atlas let you create a cluster and then using browse collection you can navigate to your Database and hence see the collections and finally you can see your records .
+```
+const adder = async()=>{
+    const mod1 =  await mod.create({ id : 23 })
+}
+adder();
+```
+
+to find heights where it is equal to 6
+
+![image](https://user-images.githubusercontent.com/63403330/182112704-ddb13d74-8271-4c30-9af5-cb332cbe9de4.png)
+
+
+So Atlas let you create a cluster and then using browse collection you can navigate to your Database and hence see the collections and finally you can see your records.
+
+
 
 
