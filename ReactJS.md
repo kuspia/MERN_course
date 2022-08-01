@@ -103,11 +103,6 @@ one more way
 ![image](https://user-images.githubusercontent.com/63403330/182147353-d68044f5-3bf9-4892-bc1e-bbb3df14ab9e.png)
 
 
-_______________________________________________________________________________
-
-  
-let's clone MI store 
-
 create data.json (https://github.com/meabhisingh/MiStore/blob/master/src/data/data.json) in data folder inside src and also make component name folder inside the same ok?
 
 Now we want to create PreNavbar 
