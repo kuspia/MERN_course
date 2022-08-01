@@ -9,6 +9,10 @@ But let's see how you can install your MongoDB locally
 
 https://www.mongodb.com/try/download/community
 
+https://www.mongodb.com/try/download/tools
+
+
+
 ![image](https://user-images.githubusercontent.com/63403330/182086368-2234783c-c0d7-4b16-bd95-feee57ce2175.png)
 
 
