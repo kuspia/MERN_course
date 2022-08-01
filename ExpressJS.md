@@ -135,11 +135,147 @@ this is browser case and look at it basically we are doing post request via form
 
 ![image](https://user-images.githubusercontent.com/63403330/182075162-b521f802-7ef8-4720-b7d2-08830b214c53.png)
 
+![image](https://user-images.githubusercontent.com/63403330/182075684-84831afc-462f-48aa-a662-28bf553c38cf.png)
 
 
+Now we want to organize the things and make our ```i.js``` file look better as it will be very hectic with lot of apis and callback function ok?
 
+so we create a dedicated file for callback functions and routes both look at these files one by one 
 
+```
+i.js
+const express = require("express")
+const app = express()
+const path = require("path")
+const bodyp = require("body-parser")
+app.use(bodyp.urlencoded({extended:false}))
+app.use(express.json())
+const router = require("./route")
+app.use(router)
+app.get("/", (req , res) => {
+res.sendFile( path.join(__dirname, 'i.html' ) )
+});
+app.listen(3000)
+```
 
+```
+route.js
+const express = require ("express")
+const router = express.Router()
+const cb = require('./callback')
+router.route("/v1").post(cb.v1_cb)
+router.route("/v2").get(cb.v2_cb)
+module.exports = router
+```
+
+```
+callback.js
+
+exports.v2_cb = (req , res)=>{
+    res.json(
+       {
+      name: "get" 
+       }
+    )
+ }
+
+exports.v1_cb = (req , res)=>{
+    const u = req.body.name 
+    console.log(u)
+    res.json(
+       {
+      success: true,
+      name: u
+       }
+    )
+} 
+```
+
+```
+i.html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FORM</title>
+    <style>
+      body {
+        background-color: rgb(145, 164, 179);
+        margin: 0%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100vw;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        height: 90vh;
+        border-radius: 5px;
+        width: 40vw;
+        background-color: white;
+        align-items: center;
+        justify-content: space-evenly;
+      }
+      form > h1 {
+        color: rgba(0, 0, 0, 0.644);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.644);
+        width: 10vw;
+        text-align: center;
+        padding-bottom: 1vmax;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      }
+      form > input {
+        padding: 1vmax;
+        width: 30vw;
+        outline: none;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        font-size: 1.3vmax;
+        border: none;
+        border-bottom: 1px solid rgba(70, 70, 70, 0.5);
+      }
+      form > input[type="submit"] {
+        width: 20vw;
+        border: none;
+        cursor: pointer;
+        background-color: #eb4034;
+        color: white;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        font-size: 1.4vmax;
+        transition: all 0.5s;
+      }
+      form > input[type="submit"]:hover {
+        background-color: #c4342a;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="/v1" method="POST">
+      <h1>REGISTER</h1>
+      <input placeholder="Enter Your Name" type="text" name="name" id="name" />
+      <input
+        placeholder="Enter Your Email"
+        type="email"
+        name="email"
+        id="email"
+      />
+      <input
+        placeholder="Enter Your Password"
+        type="password"
+        name="password"
+        id="password"
+      />
+      <input type="submit" value="Login" />
+    </form>
+  </body>
+</html>
+```
 
 
 
