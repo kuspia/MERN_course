@@ -16,6 +16,7 @@ now make sure ur folder look like this::
 
 ![image](https://user-images.githubusercontent.com/63403330/182140219-219fc183-bcf3-4770-8c59-7eefb09ec08c.png)
 
+![image](https://user-images.githubusercontent.com/63403330/182143730-38fa932e-eb42-43ca-84df-d40937656ff2.png)
 
 Now we did good cleaning it's tiem to understand it now.
 
@@ -55,6 +56,19 @@ see inside <div> u cn write HTML and outisde that you can write JS, u can also u
   
   ![image](https://user-images.githubusercontent.com/63403330/182142247-05d0fc58-c4d9-4db4-9be5-0a6e431eb628.png) Install it 
 
+choose this for your comfort of wrting tags like type h1 or div.class#id and hit enter and see then 
+  
+![image](https://user-images.githubusercontent.com/63403330/182142930-5d301bd7-1b49-442e-9595-f20746e3866d.png)
+
+![image](https://user-images.githubusercontent.com/63403330/182143580-1214c031-76a0-418a-8480-3c6191b18bbf.png)
+
+  Inline CSS
+![image](https://user-images.githubusercontent.com/63403330/182144554-8dd6ee39-ccba-485c-8d79-9226885d0674.png)
+
+![image](https://user-images.githubusercontent.com/63403330/182144709-f777f4c1-f6ee-4324-b76d-b4db9432bb95.png)
+
+  
+  
 
 
 
