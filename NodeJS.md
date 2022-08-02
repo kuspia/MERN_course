@@ -200,8 +200,10 @@ Please note any senstive information is stored on server side while managing the
 
 ok so we will learn session management now which is very very important ok ?
 
-but wai tbefore tht u should knw we also have concept of local storgae like you might have seen code being retirved from your local storgae and remember session is
-lost as soon as tab changes or you close the window.
+but wait before tht u should knw we also have concept of local storgae like you might have seen code being retirved from your local storgae.
+
+> A session will contain some unique data about that client to allow the server to keep track of the user's state. In session-based authentication, the user's state is stored in the server's memory or a database.
+
 
 so let's start !!
 
