@@ -254,6 +254,17 @@ Please note if server is closed then it will forget who is making the request he
 
 ok ?
 
+now u see session id as 
+
+![image](https://user-images.githubusercontent.com/63403330/182347597-b31d3eb2-08f8-4db3-94d3-788627773735.png)
+
+Ai4kz48IHS_sihiwTWCZyYxW0T3wrtsL
+
+now in ur browser 
+
+![image](https://user-images.githubusercontent.com/63403330/182347707-e61f2854-ccfd-40a9-a04a-3f7ec954e57f.png)
+
+
 
 
 
