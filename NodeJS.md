@@ -200,6 +200,8 @@ Please note any senstive information is stored on server side while managing the
 
 ok so we will learn session management now which is very very important ok ?
 
+but wai tbefore tht u should knw we also have concept of local storgae like you might have seen code being retirved from your local storgae and remember session is
+lost as soon as tab changes or you close the window.
 
 so let's start !!
 
