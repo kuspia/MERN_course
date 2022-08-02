@@ -206,10 +206,43 @@ but wait before tht u should knw we also have concept of local storgae like you 
 
 ![image](https://user-images.githubusercontent.com/63403330/182340800-4eea4e5c-9be9-4ae1-b125-18892463e6c7.png)
 
-
-
 so let's start !!
 
+```
+const express = require("express")
+const bodyparser = require("body-parser")
+const cookieparser = require("cookie-parser")
+const session = require("express-session")
+const app = express()
+app.use(bodyparser.json());
+app.use(bodyparser.urlencoded({extended:true}))
+app.use(cookieparser())
+app.use(session({ secret: "dsgg"  , resave: false }))
+app.get("/set" , (req , res)=>{
+if( req.session.count) req.session.count++    
+else req.session.count = 1
+console.log(req.session.count )
+console.log(req.session)
+res.send("" + req.session.count )
+})
+app.get("/" , (req , res)=>{
+res.send("DGSg")
+})
+app.listen(3000 ,()=>{
+})
+```
+now on runnnig it and hitting set api 
+
+![image](https://user-images.githubusercontent.com/63403330/182344145-310e4314-3a5b-4d2f-a9a1-a090acbf4fce.png)
+
+
+So u see how beautifully we are not losing count and u may change tab it will be recorded.
+
+![image](https://user-images.githubusercontent.com/63403330/182344340-6dc59567-5be7-4614-a8f7-efe82d436f32.png)
+
+see that a session id is created in hashed form by server and stored as a cookie for that hosturl and api path, now whenever bwoser make further requests cookies are attached with it so that server can recognize it.
+
+Please see server JSON image where u see ur variables and so callled cookie as shown.
 
 
 
