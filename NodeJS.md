@@ -194,15 +194,18 @@ Let's see cookies !!
 
 ![image](https://user-images.githubusercontent.com/63403330/182320852-f2bc5261-7692-47b8-966c-565709465882.png)
 
-now u can see cache is something tht browser itself stores for faster loads and easy access however cookies are something that server stores on the browser like ```session id``` in form of hashed text or it can store other info to have seesion mangement like what was last web-page visited by browser and u knw many clients can interact to server hence it to manage all cleints there is need of creating sessions with every browser that may make a request that's where we need session id that so thatserver can recognize the browser or client.
+now u can see cache is something tht browser itself stores for faster loads and easy access however cookies are something that server stores on the browser like ```session id``` in form of hashed text and u knw many clients can interact to server hence to manage all cleints there is need of creating sessions so that server can recognize the browser or client.
 
-Please note any senstive information is stored on server side while managing the session and it is never stored in browser in form of cookies, and typically cookies are hashed and they just help the server to recognize the browser nothing else so u can never know the password or anything from inspecting of browser.
-
-ok so we will learn session management now which is very very important ok ?
+Please note any senstive information is stored on server side while managing the session and it is never stored in browser, and typically cookies are hashed and they just help the server to recognize the browser by sending (request with cookies attached to it) nothing else so u can never know the password or anything from inspecting of browser.
 
 but wait before tht u should knw we also have concept of local storgae like you might have seen code being retirved from your local storgae.
 
 > A session will contain some unique data about that client to allow the server to keep track of the user's state. In session-based authentication, the user's state is stored in the server's memory or a database.
+
+![image](https://user-images.githubusercontent.com/63403330/182339372-3f42ddd6-70b1-4ae3-92e9-2b97b31fd0f2.png)
+
+![image](https://user-images.githubusercontent.com/63403330/182340800-4eea4e5c-9be9-4ae1-b125-18892463e6c7.png)
+
 
 
 so let's start !!
