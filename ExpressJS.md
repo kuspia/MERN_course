@@ -292,3 +292,25 @@ Solution:
 
 ![image](https://user-images.githubusercontent.com/63403330/182079892-4bdb6ec4-f43a-44ce-ad4f-e844139f908b.png)
 
+use of ```app.set()``` in express
+
+```
+
+var express = require('express');
+var app = express();
+var PORT = 3000;
+  
+app.set('title', 'GeeksforGeeks');
+  
+app.get('/', (req, res) => {
+  res.send(app.get('title'));
+})
+  
+app.listen(PORT, function(err){
+    if (err) console.log(err);
+    console.log("Server listening on PORT", PORT);
+}); 
+```
+
+![image](https://user-images.githubusercontent.com/63403330/182325312-5273bfc8-0095-4d90-aa01-65e579c449b9.png)
+
