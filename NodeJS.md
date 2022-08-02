@@ -244,6 +244,17 @@ see that a session id is created in hashed form by server and stored as a cookie
 
 Please see server JSON image where u see ur variables and so callled cookie as shown.
 
+![image](https://user-images.githubusercontent.com/63403330/182345949-82270eb5-53cf-4bd2-875e-89ecd83e0063.png)
+
+this is amzing it will keep cookie for 1 day so if u close the browser it will be recgonized by the server.
+
+![image](https://user-images.githubusercontent.com/63403330/182346384-9e259c13-4385-4957-bd10-d304995805c0.png)
+
+Please note if server is closed then it will forget who is making the request hence instead of storing sesssion in session mem we prefer it to store it in some online databases.
+
+ok ?
+
+
 
 
 
