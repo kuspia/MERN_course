@@ -182,3 +182,35 @@ remember to set port as ```process.env.PORT``` and hostname as nothing (since it
 
 u may set PORT value here as u want 
 ![image](https://user-images.githubusercontent.com/63403330/182039804-79667ed5-f7b5-4cde-86f6-53e0860de8dc.png)
+
+
+Ok !! man now its time to see three techinal terms ```cache``` ```cookies``` and ```sessions```
+
+Let's see the easiset one !!
+
+![image](https://user-images.githubusercontent.com/63403330/182320716-6e1aa2f2-fe11-46c7-b4ca-e31bc6122b16.png)
+
+Let's see cookies !!
+
+![image](https://user-images.githubusercontent.com/63403330/182320852-f2bc5261-7692-47b8-966c-565709465882.png)
+
+now u can see cache is something tht browser itself stores for faster loads and easy access however cookies are something that server stores on the browser like ```session id``` in form of hashed text or it can store other info to have seesion mangement like what was last web-page visited by browser and u knw many clients can interact to server hence it to manage all cleints there is need of creating sessions with every browser that may make a request that's where we need session id that so thatserver can recognize the browser or client.
+
+Please note any senstive information is stored on server side while managing the session and it is never stored in browser in form of cookies, and typically cookies are hashed and they just help the server to recognize the browser nothing else so u can never know the password or anything from inspecting of browser.
+
+ok so we will learn session management now which is very very important ok ?
+
+
+so let's start !!
+
+
+
+
+
+
+
+
+
+
+
+
