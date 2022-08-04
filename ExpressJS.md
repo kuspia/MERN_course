@@ -314,3 +314,28 @@ app.listen(PORT, function(err){
 
 ![image](https://user-images.githubusercontent.com/63403330/182325312-5273bfc8-0095-4d90-aa01-65e579c449b9.png)
 
+
+### Sending dynamic content is done by view engine like pug or ejs
+
+
+```app.set('view engine', 'ejs')``` and also do ```npm i ejs```
+
+```app.use( express.static(path.join(__dirname, "views", "static")))```
+
+now see do it, becz actually when u do ```res.render()``` so when we pass a file u should give full location or use below line to avoid it 
+
+u might have seen like this also 
+
+![image](https://user-images.githubusercontent.com/63403330/182923959-17043f5d-62ec-4a1b-be21-90cf5e40cee4.png)
+
+see this to look how dynamic content is being passed...
+
+![image](https://user-images.githubusercontent.com/63403330/182925640-2e8d1dda-3716-49a0-8573-e21605f0c883.png)
+
+![image](https://user-images.githubusercontent.com/63403330/182925831-6c804e69-b3fb-46a0-97a9-5cffdce87652.png)
+
+![image](https://user-images.githubusercontent.com/63403330/182925909-e7073c8d-e2dd-4f97-ac24-c2c459cb5f48.png)
+
+
+
+
