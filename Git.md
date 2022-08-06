@@ -17,3 +17,22 @@ git push origin master
 
 ![image](https://user-images.githubusercontent.com/63403330/183232501-772bea44-33a4-4b20-ae17-0548b4777027.png)
 
+now to deploy on heroku 
+
+create a app 
+
+and then do 
+
+```
+heroku login
+```
+
+on termianl of vs code
+
+and make sure u login and have heroku CLI in your pc 
+
+```
+heroku git:remote -a <your app name>
+git push heroku master
+```
+
