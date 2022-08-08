@@ -48,5 +48,11 @@ and tbh still you can run and make edits ```yarn build``` reflects the changes a
 
 but still it is not recommened becz everytime to see the changes we need to build but same is not true when we are at two differrent ports 
 
+Custom Scripts:
+```
+npm run-script <custom_script_name>
 
+or
 
+npm run <custom_script_name>
+```
