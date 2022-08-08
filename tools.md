@@ -36,3 +36,8 @@ heroku git:remote -a nft-warranty-app
 git push heroku master
 ```
 
+
+https://dev.to/myogeshchavan97/how-to-deploy-react-node-js-application-to-heroku-4jb4 
+
+
+check this to deplpoy reactjs + nodejs (note as both run on diff port but after we combine in a build folder the problem get solved)
