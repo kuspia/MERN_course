@@ -265,7 +265,9 @@ now in ur browser
 ![image](https://user-images.githubusercontent.com/63403330/182347707-e61f2854-ccfd-40a9-a04a-3f7ec954e57f.png)
 
 
+### JWT 
 
+Please read this first --> https://stackoverflow.com/questions/31309759/what-is-secret-key-for-jwt-based-authentication-and-how-to-generate-it
 
 
 
