@@ -41,3 +41,12 @@ https://dev.to/myogeshchavan97/how-to-deploy-react-node-js-application-to-heroku
 
 
 check this to deplpoy reactjs + nodejs (note as both run on diff port but after we combine in a build folder the problem get solved)
+
+Infact its good practice to build folder ```build``` when working with reactjs so that server and client are on same port 
+
+and tbh still you can run and make edits ```yarn build``` reflects the changes and observe it 
+
+but still it is not recommened becz everytime to see the changes we need to build but same is not true when we are at two differrent ports 
+
+
+
