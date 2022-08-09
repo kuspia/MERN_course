@@ -53,7 +53,7 @@ logs	[]
 val	0 wei
 ```
 
-getbal 
+getBalance
 
 ```
 from	0x5B38Da6a701c568545dCfcB03FcB875f56beddC4
@@ -69,3 +69,89 @@ logs	[]
 now you see how beautifull transactions are made for deploying or calling of methods of your smart contract 
 
 now let's run it on metamask account so for that just change your environment and choose it.
+
+
+![image](https://user-images.githubusercontent.com/63403330/183685729-62c13b6e-3102-44ed-b875-368c33cd9148.png)
+
+
+![image](https://user-images.githubusercontent.com/63403330/183685773-a9c419e4-ef82-4c9f-912c-b7587ca9cfb1.png)
+
+see how you are notified 
+
+now u can see full detail on etherscan 
+
+![image](https://user-images.githubusercontent.com/63403330/183686188-bcecb13f-084d-4815-a966-a128d7f0fb04.png)
+
+to connect this with your web-app u need abi and contract addrees correct 
+
+
+```
+[
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "getBalance",
+		"outputs": [
+			{
+				"name": "",
+				"type": "int256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "amt",
+				"type": "int256"
+			}
+		],
+		"name": "withdraw",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "amt",
+				"type": "int256"
+			}
+		],
+		"name": "deposit",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "constructor"
+	}
+]
+```
+
+so u see the abi above and clearly contract address is that from which u created the contract u can find it easily, now the idea is to conenct it with our .js app in backend and do it so how we can do ???
+
+
+ _to fetch the bal_
+ ```
+ web3  = new Web3(web3.currentProvider);
+ contract = new web3.eth.Contract ( abi , address ) 
+ contract.methods.getBalance().call(bal) //returns promse 
+ ```
+ depositing ....  
+![image](https://user-images.githubusercontent.com/63403330/183689730-17d69cb5-e0d3-46a1-a821-3c0e52732a77.png)
+
+![image](https://user-images.githubusercontent.com/63403330/183689894-0b6266a8-fcb0-48d6-806f-fe4ab5ca3b2d.png)
+
+
+
+
