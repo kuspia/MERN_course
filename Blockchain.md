@@ -142,11 +142,11 @@ so u see the abi above and clearly contract address is that from which u created
 
 
  _to fetch the bal_
- ```
- web3  = new Web3(web3.currentProvider);
- contract = new web3.eth.Contract ( abi , address ) 
- contract.methods.getBalance().call(bal) //returns promse 
- ```
+
+![image](https://user-images.githubusercontent.com/63403330/183704688-0308fe84-ab6e-4d0f-bf78-e4cc4dd44039.png)
+
+
+
  depositing ....  
 ![image](https://user-images.githubusercontent.com/63403330/183689730-17d69cb5-e0d3-46a1-a821-3c0e52732a77.png)
 
