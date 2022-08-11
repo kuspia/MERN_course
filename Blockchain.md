@@ -283,10 +283,66 @@ now in calldata (also stored in RAM only not a permanet thing), 1st of all u can
 u seee hpw beautifully things are designed it is just becz of minimiing gas since for ethereum blockchain it cost u ether u have to pay from pocket so we have such small optimizations everywhere
 
 
+### Truffle tutorial 
+
+this packaage let u compile or deploy solidity codes maybe on ganache or on test/main net 
+
+do ```npm i truffle``` 
+
+then ./node_modules/.bin/truffle init and do ```compile with truffle``` to get a build folder of all contracts that jave json file having abi and bytecode
+
+now how to deploy on ganache (_local blockchain simulator_) ? using truffle 
+
+inside migrations build a new file for  index_Bank.sol as (_do the edits in Bank.sol to include license and change compiler version) and include the content as shown, index is importtant that let u specify the compile order 
+
+```
+const Bank = artifacts.require("Bank");
+
+module.exports = function (deployer) {
+  deployer.deploy(Bank);
+};
+```
+
+
+so u need to install ganache but ok let's skip and see on doing ```truffle migrate``` that's wht we see and yeah make sure in truffle.config file for deployment section set the port as on ur ganache GUI 
+
+```
+    // development: {
+    //  host: "127.0.0.1",     // Localhost (default: none)
+    //  port: 8545,            // Standard Ethereum port (default: none)
+    //  network_id: "*",       // Any network (default: none)
+    // },
+    
+ ```
+    
+
+![image](https://user-images.githubusercontent.com/63403330/184111318-948b4b81-6583-41c8-942c-7d7a3735822e.png)
+
+
+do ```truffle migrate --reset``` if u do any change in .sol file else it wn't be reflected 
+
+what's infura? let u connect with testnet or mainnet easily and let u deploy ur contract, since we have seen how truffle help us to deploy the contract on ganache it's time to see on ropsten network 
+
+am i right so do the changes in truffle file as hwon below and understand what we did 
+
+```
+const HDWalletProvider = require('@truffle/hdwallet-provider');
+mnemonic = provide it yourself
 
 
 
+     ropsten: {
+    provider: () => new HDWalletProvider(mnemonic, `https://ropsten.infura.io/v3/YOUR-PROJECT-ID`),
+      network_id: 3,       // Ropsten's id
+     gas: 5500000,        // Ropsten has a lower block limit than mainnet
+     confirmations: 2,    // # of confirmations to wait between deployments. (default: 0)
+     timeoutBlocks: 200,  // # of blocks before a deployment times out  (minimum/default: 50)
+    skipDryRun: true     // Skip dry run before migrations? (default: false for public nets )
+   },
+    
+```
 
+see the syntaxes inside truffle file, (_have a infura url before u proceed_)
 
 
 
