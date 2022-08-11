@@ -336,7 +336,6 @@ so u see these things are permanent and non erasable hence can be searched or ve
 
 ![image](https://user-images.githubusercontent.com/63403330/184126210-fd2b9e85-26c8-4a68-9c9c-3aa3229375bc.png)
 
-
 tht's how u connect ur deplooyed contract with web3 
 
 ![image](https://user-images.githubusercontent.com/63403330/184126412-f4cdaaba-cfb0-4dd2-a646-8d56860b0d00.png)
