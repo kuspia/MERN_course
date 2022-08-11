@@ -1,4 +1,5 @@
 
+https://www.youtube.com/watch?v=2uYuWiICCM0&list=PLsyeobzWxl7oY6tZmnZ5S7yTDxyu4zDW-&ab_channel=Telusko
 
 ```
 pragma solidity 0.4.25;
@@ -108,7 +109,7 @@ so u see the abi above, now the idea is to conenct it with our .js app in backen
 
 ![image](https://user-images.githubusercontent.com/63403330/183689894-0b6266a8-fcb0-48d6-806f-fe4ab5ca3b2d.png)
 
-## Let'see some solidity stuff 
+## Let'see some solidity stuff https://www.youtube.com/watch?v=MERRq6GUQrI&list=PL-Jc9J83PIiG6_thChXWzolj9BEG-Y0gh&ab_channel=Pepcoding
 
 _Please note for every transaction we need to pay ethers for the gas(fuel) cost now it uis suggested to write a optimized code i.e. don't have unnecssary loops or if something is constant make it ```const``` declare visibilty of functions properly to have less gas cost_
 
@@ -239,7 +240,7 @@ now in calldata (also stored in RAM only not a permanet thing), 1st of all u can
 u seee hpw beautifully things are designed it is just becz of minimiing gas since for ethereum blockchain it cost u ether u have to pay from pocket so we have such small optimizations everywhere
 
 
-### Truffle tutorial 
+### Truffle tutorial  https://www.youtube.com/watch?v=Zo4dYRw9WSE&ab_channel=CodeEater
 
 this packaage let u compile or deploy solidity codes maybe on ganache or on test/main net 
 
