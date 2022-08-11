@@ -246,7 +246,7 @@ this packaage let u compile or deploy solidity codes maybe on ganache or on test
 
 do ```npm i truffle``` 
 
-then ./node_modules/.bin/truffle init and do ```compile with truffle``` to get a build folder of all contracts that jave json file having abi and bytecode
+then ./node_modules/.bin/truffle init and do compile with truffle to get a build folder of all contracts that jave json file having abi and bytecode
 
 now how to deploy on ganache (_local blockchain simulator_) ? using truffle 
 
@@ -272,20 +272,17 @@ so u need to install ganache but ok let's skip and see on doing ```truffle migra
     
  ```
     
-
 ![image](https://user-images.githubusercontent.com/63403330/184111318-948b4b81-6583-41c8-942c-7d7a3735822e.png)
-
 
 do ```truffle migrate --reset``` if u do any change in .sol file else it wn't be reflected 
 
-what's infura? let u connect with testnet or mainnet easily and let u deploy ur contract, since we have seen how truffle help us to deploy the contract on ganache it's time to see on ropsten network 
+what's infura (_full node_) ? and infura api url let u connect with testnet or mainnet easily and let u deploy ur contract, since we have seen how truffle help us to deploy the contract on ganache it's time to see on ropsten network 
 
-am i right so do the changes in truffle file as hwon below and understand what we did 
+so do the changes in truffle file as shwon below and understand what we did 
 
 ```
-const HDWalletProvider = require('@truffle/hdwallet-provider');
+const HDWalletProvider = require('@truffle/hdwallet-provider'); // it let u connect infura to truffle and use ur wallet 
 mnemonic = provide it yourself
-
 
 
      ropsten: {
@@ -299,7 +296,22 @@ mnemonic = provide it yourself
     
 ```
 
-see the syntaxes inside truffle file, (_have a infura url before u proceed_)
+now we can deploy it on main-net so clearly it will use ur wallet to charge for deployment cost 
+
+```./node_modules/.bin/truffle migrate --network ropsten```
+
+please have a look ... how things look 
+
+![image](https://user-images.githubusercontent.com/63403330/184120677-b2f616f9-ddc3-4081-bdcd-e3209626e976.png)
+
+
+![image](https://user-images.githubusercontent.com/63403330/184120796-fd328d59-035d-41c7-8d94-a703ce7b6d78.png)
+
+![image](https://user-images.githubusercontent.com/63403330/184120818-4ddb3224-7d85-4ec2-bb3e-c51b793b6c9e.png)
+
+
+
+
 
 
 
