@@ -309,8 +309,12 @@ please have a look ... how things look
 
 ![image](https://user-images.githubusercontent.com/63403330/184120818-4ddb3224-7d85-4ec2-bb3e-c51b793b6c9e.png)
 
-
 ![image](https://user-images.githubusercontent.com/63403330/184121000-ed02682b-19db-425f-a6ed-1fff768209bd.png)
 
+you can see more detials on etherscan network 
+
+https://www.youtube.com/watch?v=gP5zcHD8tJU&ab_channel=Ethos must check it it tell u block chain confirmations 
+
+so u see these things are permanent and non erasable hence can be searched or verified if needed 
 
 
