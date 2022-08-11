@@ -222,6 +222,69 @@ we have also ```indexed``` keyword here that let u help to search in logs
 
 Function modeifiers act as middleware tbh (recall midddleware authetication of jwt)
 
+// do u know when u deplpoy a contract it get's its own address which u see in _to_ of blochchain reciept,
+
+so clearly u cn actually send ethers to ur contrract and from that u may send ethers to other contract or addrees? am i right 
+
+![image](https://user-images.githubusercontent.com/63403330/184086550-3f0e6c85-cc46-47af-8f10-5c1326f44e2a.png)
+
+
+so now there are button colors in remix ide 
+
+Red: payable 
+
+Blue: view, pure or state var 
+
+yellow: simple or transactional type function
+
+
+![image](https://user-images.githubusercontent.com/63403330/184086907-1ba0799a-3b41-4af3-b8af-361ef4672c8c.png)
+
+you can make a constructor payable that means during deployment u can add ethers to ur contract 
+
+``` 1eth = 10^18 wei```
+
+now we will see how to send eth from contract 
+
+send() : 2300 gas limit, and please note if u don't put require it will not return ur gas if it get failed becz gas milit is exceeded
+
+transfer() : 2300 gas limit unlike send() it does not return anything like bool value but yes it returns ur gas cost if failed 
+
+call(): u can set the gas limit and it retuns bool value and byte return (some data), but it does n't revert gas cost so use require
+
+![image](https://user-images.githubusercontent.com/63403330/184089513-5018a40c-432d-471f-a071-272c8bc02ba3.png)
+
+
+![image](https://user-images.githubusercontent.com/63403330/184089534-66d19f06-6d3b-4c64-8b89-3b5908550ba2.png)
+
+
+Immutability in blockchain 
+
+![image](https://user-images.githubusercontent.com/63403330/184089981-e824d5b5-0384-4a8b-9fb3-5b5023c6b169.png)
+
+
+during deployment when u wanna make something const, tbh u can intialize imuutable things inline also but ya that is spefic to depployment tbh
+
+
+![image](https://user-images.githubusercontent.com/63403330/184090105-01b7b35d-e9dd-4f74-aa34-53c7a19f3458.png)
+
+
+
+?? what is this ?? 
+
+![image](https://user-images.githubusercontent.com/63403330/184090445-01cf0f29-42df-4b82-9ea3-9f2148da861b.png) clealry u take space on blockchain so it cost some gas right.
+
+![image](https://user-images.githubusercontent.com/63403330/184090571-8b16ce7b-a1a2-43ed-84e5-9157e8ba2ce0.png)
+
+
+now in calldata (also stored in RAM only not a permanet thing), 1st of all u can use it in function i/ps argument list only and it cost less gas becz they can't eb changed 
+
+
+u seee hpw beautifully things are designed it is just becz of minimiing gas since for ethereum blockchain it cost u ether u have to pay from pocket so we have such small optimizations everywhere
+
+
+
+
 
 
 
