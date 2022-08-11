@@ -152,6 +152,78 @@ so u see the abi above and clearly contract address is that from which u created
 
 ![image](https://user-images.githubusercontent.com/63403330/183689894-0b6266a8-fcb0-48d6-806f-fe4ab5ca3b2d.png)
 
+## Let'see some solidity stuff 
+
+_Please note for every transaction we need to pay ethers for the gas(fuel) cost now it uis suggested to write a optimized code i.e. don't have unnecssary loops or if something is constant make it ```const``` declare visibilty of functions properly to have less gas cost_
+
+ABI ![image](https://user-images.githubusercontent.com/63403330/184082482-7ad71682-417b-4f48-bce5-f6a1ebd9ca0b.png)
+
+basically abi let u connect your smart contract with the deployed contract address (_from_ vala address) from some other external calls 
+
+Bytecode ![image](https://user-images.githubusercontent.com/63403330/184082691-0c51609d-3701-469f-bc56-74305b5ae0a6.png)
+
+this is what get deployed on EVM _ethereum virtual machine_ 
+
+![image](https://user-images.githubusercontent.com/63403330/184082797-c77d6e06-34ce-4540-b906-6c0229f8ee47.png)
+
+
+constructor and state variable demonstration: (please note state varaibles have refrences so they are stored on block chain unline local variables that have memory space)
+
+![image](https://user-images.githubusercontent.com/63403330/184083021-546cb8d0-04e2-4bf7-8ccb-1a2a6e26fde8.png)
+
+
+Global variables: (you can see they are predefined actually)
+
+![image](https://user-images.githubusercontent.com/63403330/184083079-b08afb85-4215-429e-93b2-82d757bac1b0.png)
+
+View function declares that no state (_state vars_) will be changed. Pure function declares that no state variable will be changed or read
+
+![image](https://user-images.githubusercontent.com/63403330/184083362-50dbb1e7-2fc5-4e78-ba21-a99cfe0b95d7.png)
+
+![image](https://user-images.githubusercontent.com/63403330/184083520-494eedb1-230d-49de-8456-9b6707f87ed8.png)
+
+
+Note some stuffs like strings and struct are by default state vars so use memory with that 
+
+![image](https://user-images.githubusercontent.com/63403330/184083703-99322864-632b-49fb-8639-ceb870de5b52.png)
+
+here also we have such stuufs that u can read 
+
+![image](https://user-images.githubusercontent.com/63403330/184084263-cae53410-c106-46e2-afe0-26b5ff4ea198.png)
+
+![image](https://user-images.githubusercontent.com/63403330/184084322-9c1f3f0d-ce3b-416b-b9ed-6a92fba5d0b5.png)
+
+
+State Variable Visibility in Solidity
+
+Public means that the variable can be accessed by the contract and by other smart contracts.
+
+Internal means that the variable can only be used with the contract it is defined in and its subclasses.
+
+Private means that the variable can only be accessed within the contract it is defined. Trying to access it outside this contract gives a compilation error.
+
+Function Visibility in Solidity
+
+An external function can be accessed from other contracts or outside (like remix ide or web3 calls )
+
+A public function can be either called internally or via an EVM message call.
+
+An internal function can be accessed in the contract in which it is defined and in its subclasses.
+
+A private function can only be called from the contract in which it is defined.
+
+![image](https://user-images.githubusercontent.com/63403330/184085264-ac948b59-1575-4136-876f-b7b071cad258.png)
+
+events are important things that get printed in blockcahin logs receipt and note, events are emitted from functions and these events logs are clearly taking permannet storage on blockcahin as they are getting printed in logs.
+
+we have also ```indexed``` keyword here that let u help to search in logs
+
+``` require( _mobile_no != 0, "please provide valid mobile number");```, that s how we use require keyword 
+
+Function modeifiers act as middleware tbh (recall midddleware authetication of jwt)
+
+
+
 
 
 
