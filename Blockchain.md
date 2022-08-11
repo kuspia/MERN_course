@@ -318,3 +318,28 @@ https://www.youtube.com/watch?v=gP5zcHD8tJU&ab_channel=Ethos must check it it te
 so u see these things are permanent and non erasable hence can be searched or verified if needed 
 
 
+### Let's see web3.js ?/
+
+![image](https://user-images.githubusercontent.com/63403330/184124788-cf1b2c30-87d9-4fa0-804d-105035781a15.png)
+
+
+![image](https://user-images.githubusercontent.com/63403330/184124724-82133bdb-3cd2-4f87-8220-129de9857248.png)
+
+
+![image](https://user-images.githubusercontent.com/63403330/184125345-a58e8d08-bd2b-4701-a9a2-389d317cc901.png)
+
+![image](https://user-images.githubusercontent.com/63403330/184125406-ff8dfdf5-b011-4ba9-a7a8-935acbb657a9.png)
+
+![image](https://user-images.githubusercontent.com/63403330/184125732-f20d50ef-cd6f-45f3-849f-78499d0cf7e3.png)
+
+![image](https://user-images.githubusercontent.com/63403330/184125896-b3730545-68e6-45c6-9b35-87a3fefed4f9.png)
+
+![image](https://user-images.githubusercontent.com/63403330/184126210-fd2b9e85-26c8-4a68-9c9c-3aa3229375bc.png)
+
+
+tht's how u connect ur deplooyed contract with web3 
+
+![image](https://user-images.githubusercontent.com/63403330/184126412-f4cdaaba-cfb0-4dd2-a646-8d56860b0d00.png)
+
+![image](https://user-images.githubusercontent.com/63403330/184126558-5a78ddb8-b9c8-4727-8a75-5d205f505a3d.png)
+
